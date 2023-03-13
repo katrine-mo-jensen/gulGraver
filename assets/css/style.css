@@ -29,3 +29,58 @@ button,
 select {
   font: inherit;
 }
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+#imageJCB {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fadeImages {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  opacity: 0;
+  margin: auto;
+}
+
+.imageFadeOne {
+  transition: opacity 1000ms ease 1s;
+}
+
+.imageFadeTwo {
+  transition: opacity 1000ms ease 1.5s;
+}
+
+.imageFadeThree {
+  transition: opacity 1000ms ease 2s;
+}
+
+.showImage {
+  opacity: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 390px) {
+  #imageJCB {
+    display: unset;
+    align-items: center;
+  }
+
+  footer {
+    display: unset;
+    text-align: center;
+  }
+  p {
+    padding-bottom: 20px;
+  }
+}
