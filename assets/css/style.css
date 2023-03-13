@@ -30,10 +30,15 @@ select {
   font: inherit;
 }
 
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 header {
-  display: flex;
-  justify-content: center;
-  margin: 30px;
+  text-align: center;
+  padding: 30px 0;
 }
 
 #imageJCB {
@@ -66,6 +71,29 @@ header {
 .info-box {
   background-color: rgba(244, 164, 13, 0.75);
   color: #707070;
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+.info-box p {
+  max-width: 50%;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: #707070;
+  cursor: pointer;
 }
 
 .my-foldout-text {
@@ -75,12 +103,12 @@ header {
 }
 
 .show-foldout {
-  height: 200px;
+  height: 80px;
 }
 
-footer {
+footer > .container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 @media (max-width: 390px) {
@@ -93,7 +121,7 @@ footer {
     margin: auto;
   }
 
-  footer {
+  footer > .container {
     display: unset;
     text-align: center;
   }
