@@ -63,6 +63,20 @@ header {
 .showImage {
   opacity: 1;
 }
+.info-box {
+  background-color: rgba(244, 164, 13, 0.75);
+  color: #707070;
+}
+
+.my-foldout-text {
+  height: 0px;
+  overflow: hidden;
+  transition: height 500ms ease;
+}
+
+.show-foldout {
+  height: 200px;
+}
 
 footer {
   display: flex;
@@ -86,18 +100,4 @@ footer {
   p {
     padding-bottom: 20px;
   }
-.info-box {
-  background-color: rgba(244, 164, 13, 0.75);
-  color: #707070;
-  max-width: 640px;
-}
-
-.my-foldout-text {
-  height: 0px;
-  overflow: hidden;
-  transition: height 500ms ease;
-}
-
-.show-foldout {
-  height: 200px;
 }
