@@ -46,7 +46,6 @@ header {
   height: 300px;
   display: inline-block;
   opacity: 0;
-  margin: auto;
 }
 
 .imageFadeOne {
@@ -72,8 +71,12 @@ footer {
 
 @media (max-width: 390px) {
   #imageJCB {
-    display: unset;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .fadeImages {
+    margin: auto;
   }
 
   footer {
